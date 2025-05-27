@@ -1,7 +1,6 @@
 package ie.atu.sw;
 
 public class CaesarCipher {
-	// We need a key. Ceasar Cipher is a simple symmetric cipher
 	/*
 	 * A ceasar cipher is a simple symmetric/substitution cipher
 	 * Uses the same key to encrypt and decrypt
@@ -13,5 +12,12 @@ public class CaesarCipher {
 		this.key = key;
 	}
 	
+	public String encrypt(String s) { // Strings are s and t, ints are i and j
+		return null;
+	}
+	
+	public String decrypt(String s) {
+		return null;
+	}
 	
 }
