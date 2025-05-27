@@ -30,7 +30,7 @@ public class CaesarCipher {
 		String dec = "";
 		
 		for (int i = 0; i < cipherText.length(); i++) {
-			
+			char ch = (char) (cipherText.codePointAt(i) - key);
 		}
 		
 		return null;
