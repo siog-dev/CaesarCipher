@@ -20,8 +20,10 @@ public class CaesarCipher {
 			// Use charAt(int index) to get a char string
 			// Use codePointAt(int index) to get an int (unicode int)
 			char ch = (char) (plainText.codePointAt(i) + key);
+			enc = enc + ch; // This is bad form - don't do this in a loop
 		}
-		return null;
+		
+		return enc;
 	}
 	
 	public String decrypt(String cipherText) { // Encrypted text
