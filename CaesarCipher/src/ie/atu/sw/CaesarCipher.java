@@ -9,7 +9,7 @@ public class CaesarCipher {
 	}
 	
 	public String encrypt(String plainText) {
-		String enc = "";
+		String enc = ""; // 1. Create a string builder up here
 		
 		for (int i = 0; i < plainText.length(); i++) {
 			char ch = (char) (plainText.codePointAt(i) + key);
@@ -21,10 +21,11 @@ public class CaesarCipher {
 			 * 
 			 * Use a string builder for building strings inside loops
 			 */
-			enc = enc + ch;
+			
+			enc = enc + ch; // Call builder.append
 		}
 		
-		return enc;
+		return enc; // Return builder.toString()
 	}
 	
 	public String decrypt(String cipherText) {
