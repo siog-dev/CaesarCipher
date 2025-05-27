@@ -13,6 +13,14 @@ public class CaesarCipher {
 		
 		for (int i = 0; i < plainText.length(); i++) {
 			char ch = (char) (plainText.codePointAt(i) + key);
+			/*
+			 * enc = enc + ch; is inefficient
+			 * it looks for enc in the string pool
+			 * it won't find it and can't change it
+			 * creates a new object and appends ch to the end
+			 * 
+			 * Use a string builder for building strings inside loops
+			 */
 			enc = enc + ch;
 		}
 		
