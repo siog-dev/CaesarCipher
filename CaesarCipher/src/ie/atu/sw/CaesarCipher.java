@@ -17,7 +17,9 @@ public class CaesarCipher {
 		String enc = "";
 		
 		for (int i = 0; i < plainText.length(); i++) {
-
+			// Use charAt(int index) to get a char string
+			// Use codePointAt(int index) to get an int (unicode int)
+			plainText.codePointAt(i) + key;
 		}
 		return null;
 	}
