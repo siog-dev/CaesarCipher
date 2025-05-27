@@ -30,13 +30,13 @@ public class CaesarCipher {
 	}
 	
 	public String decrypt(String cipherText) {
-		String dec = "";
+		StringBuilder sb = new StringBuilder("");
 		
 		for (int i = 0; i < cipherText.length(); i++) {
 			char ch = (char) (cipherText.codePointAt(i) - key);
-			dec = dec + ch;
+			sb.append(ch);
 		}
 		
-		return dec;
+		return sb.toString();
 	}
 }
