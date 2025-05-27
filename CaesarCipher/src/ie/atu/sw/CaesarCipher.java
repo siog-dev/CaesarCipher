@@ -13,6 +13,12 @@ public class CaesarCipher {
 	}
 	
 	public String encrypt(String plainText) { // Text anyone can read
+		// Loop over each char in the string, and offset it by the key
+		String enc = "";
+		
+		for (int i = 0; i < plainText.length(); i++) {
+
+		}
 		return null;
 	}
 	
