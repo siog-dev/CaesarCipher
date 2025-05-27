@@ -12,12 +12,16 @@ public class CaesarCipher {
 		this.key = key;
 	}
 	
-	public String encrypt(String s) { // Strings are s and t, ints are i and j
+	public String encrypt(String plainText) { // Text anyone can read
 		return null;
 	}
 	
-	public String decrypt(String s) {
+	public String decrypt(String cipherText) { // Encrypted text
 		return null;
+	}
+	
+	public static void main(String[] args) {
+		
 	}
 	
 }
