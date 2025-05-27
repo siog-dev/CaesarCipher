@@ -27,6 +27,12 @@ public class CaesarCipher {
 	}
 	
 	public String decrypt(String cipherText) { // Encrypted text
+		String dec = "";
+		
+		for (int i = 0; i < cipherText.length(); i++) {
+			
+		}
+		
 		return null;
 	}
 }
