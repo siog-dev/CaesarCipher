@@ -19,9 +19,4 @@ public class CaesarCipher {
 	public String decrypt(String cipherText) { // Encrypted text
 		return null;
 	}
-	
-	public static void main(String[] args) {
-		
-	}
-	
 }
