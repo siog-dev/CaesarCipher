@@ -7,6 +7,11 @@ public class CaesarCipher {
 	 * Uses the same key to encrypt and decrypt
 	 */
 	private int key = 0; // Int key -> the number is the key/letter shift
+
+	public CaesarCipher(int key) {
+		// super();
+		this.key = key;
+	}
 	
 	
 }
