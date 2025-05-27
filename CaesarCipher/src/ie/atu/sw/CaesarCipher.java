@@ -8,6 +8,15 @@ public class CaesarCipher {
 		this.key = key;
 	}
 	
+	/*
+	 * 2. REMOVE REPITITION
+	 * 
+	 * Create a private method to call once
+	 * Keep signature "public String encrypt(String plainText)"
+	 * Call builder as a the new method and pass it true or false
+	 * True - encrypt, false - decrypt
+	 */
+	
 	public String encrypt(String plainText) {
 		String enc = ""; // 1. Create a string builder up here
 		
