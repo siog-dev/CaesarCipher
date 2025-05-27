@@ -18,15 +18,15 @@ public class CaesarCipher {
 	 */
 	
 	public String encrypt(String plainText) {
-		StringBuilder sb = new StringBuilder(""); // 1. Create a string builder up here
+		StringBuilder sb = new StringBuilder("");
 		
 		for (int i = 0; i < plainText.length(); i++) {
 			char ch = (char) (plainText.codePointAt(i) + key);
 			
-			sb.append(ch); // Call builder.append
+			sb.append(ch);
 		}
 		
-		return sb.toString(); // Return builder.toString()
+		return sb.toString();
 	}
 	
 	public String decrypt(String cipherText) {
