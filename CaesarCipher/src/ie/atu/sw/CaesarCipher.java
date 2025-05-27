@@ -31,8 +31,9 @@ public class CaesarCipher {
 		
 		for (int i = 0; i < cipherText.length(); i++) {
 			char ch = (char) (cipherText.codePointAt(i) - key);
+			dec = dec + ch;
 		}
 		
-		return null;
+		return dec;
 	}
 }
