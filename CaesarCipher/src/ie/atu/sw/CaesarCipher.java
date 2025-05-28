@@ -8,6 +8,30 @@ public class CaesarCipher {
 		this.key = key;
 	}
 	
+	// Johns solution - I was not far off!
+	private String transform(String s, boolean encrypt) {
+		StringBuilder sb = new StringBuilder();
+		
+		for (int i = 0; i < s.length(); i++) {
+			if(encrypt) {
+				sb.append((char)(s.codePointAt(i) + key));
+			}else {
+				sb.append((char)(s.codePointAt(i) - key));
+			}
+		}
+		
+		return sb.toString();
+	}
+	
+	public String encrypt(String plainText) {
+		return transform(plainText, true);
+	}
+	
+	public String decrypt(String cypherText) {
+		return transform(cypherText, false);
+	}
+	
+	/*
 	private String transform(String s, boolean encrypt) {
 		StringBuilder sb = new StringBuilder("");
 
@@ -30,4 +54,5 @@ public class CaesarCipher {
 	public String decrypt(String s) {
 		return transform(s, false);
 	}
+	*/
 }
