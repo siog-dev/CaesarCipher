@@ -20,10 +20,12 @@ public class CaesarCipher {
 	// private String transform(String s, boolean encrypt)
 	private String transform(String s, boolean encrypt) {
 		StringBuilder sb = new StringBuilder("");
-		boolean enc = true;
+		// Hard coding enc = true means it will always encrypt!
+		// boolean enc = true;
 		
-		for (int i = 0; i < sb.length(); i++) {
-			if (enc) {
+		// Check input string s, not sb - sb is currently empty
+		for (int i = 0; i < s.length(); i++) {
+			if (encrypt) {
 				char ch = (char) (s.codePointAt(i) + key);
 				sb.append(ch);
 			}else {

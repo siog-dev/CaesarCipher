@@ -8,6 +8,5 @@ public class Runner {
 		String encrypted = cc.encrypt("Gauls are smelly and dangerous");
 		System.out.println(encrypted);
 		System.out.println(cc.decrypt(encrypted));
-		
 	}
 }
