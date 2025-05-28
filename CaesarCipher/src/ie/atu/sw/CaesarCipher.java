@@ -17,6 +17,32 @@ public class CaesarCipher {
 	 * True - encrypt, false - decrypt
 	 */
 	
+	// private String transform(String s, boolean encrypt)
+	private String transform(String s, boolean encrypt) {
+		StringBuilder sb = new StringBuilder("");
+		boolean enc = true;
+		
+		for (int i = 0; i < sb.length(); i++) {
+			if (enc) {
+				char ch = (char) (s.codePointAt(i) + key);
+				sb.append(ch);
+			}else {
+				char ch = (char) (s.codePointAt(i) - key);
+				sb.append(ch);
+			}
+		}
+		return sb.toString();
+	}
+
+	public String encrypt(String s) {
+		return transform(s, true);
+	}
+	
+	public String decrypt(String s) {
+		return transform(s, false);
+	}
+	
+	/*
 	public String encrypt(String plainText) {
 		StringBuilder sb = new StringBuilder("");
 		
@@ -38,5 +64,7 @@ public class CaesarCipher {
 		}
 		
 		return sb.toString();
+		
 	}
+	*/
 }
